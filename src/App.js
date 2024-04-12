@@ -7,7 +7,8 @@ import AssignmentsPage from './components/AssignmentsPage';
 import PackagesPage from './components/PackagesPage';
 import LearningToolsPage from './components/LearningToolsPage';
 import ContactPage from './components/ContactPage';
-
+import Login from './components/Login';
+import Register from './components/Register';
 const App = () => {
   return (
     <Router>
@@ -19,6 +20,8 @@ const App = () => {
         <Route path="/packages" element={<PackagesPage />} />
         <Route path="/learning-tools" element={<LearningToolsPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );

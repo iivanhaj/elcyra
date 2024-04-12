@@ -120,7 +120,7 @@ const LandingPage = () => {
               <textarea id="message" name="message" rows="4" cols="50"></textarea>
             </div>
             <div className="form-group">
-              <button type="submit">Submit</button>
+              <button type="submit" className='Submit-button'>Submit</button>
             </div>
           </form>
           <div className='thanks'>Thanks for submitting!</div>

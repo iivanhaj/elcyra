@@ -1,26 +1,20 @@
-/* navbar.css */
-
-/* Navbar container */
 .navbar {
     color: #F1E3C8;
     padding: 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Navbar container */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logo */
 .logo {
     font-size: 24px;
     margin-left: 20px;
 }
 
-/* Navigation links */
 .nav-links {
     list-style-type: none;
     margin: 0;
@@ -47,12 +41,10 @@
     align-items: center;
 }
 
-/* Dropdown container */
 .dropdown {
     position: relative;
 }
 
-/* Profile button */
 .profile-button {
     background-color: transparent;
     border: none;
@@ -60,12 +52,10 @@
     cursor: pointer;
 }
 
-/* Profile icon */
 .profile-icon {
     margin-right: 5px;
 }
 
-/* Dropdown content */
 .dropdown-content {
     position: absolute;
     background-color: #333;
@@ -92,7 +82,6 @@
     text-align: left;
 }
 
-/* Login button */
 .login-button {
     background-color: transparent;
     border: 1px solid #F1E3C8;
@@ -101,22 +90,19 @@
     cursor: pointer;
 }
 
-/* Profile link */
 .profile-link {
-    align-items: center; /* Align items vertically */
-    text-decoration: none; /* Remove default link underline */
-    color: #F1E3C8; /* Adjust color as needed */
+    align-items: center; 
+    text-decoration: none; 
+    color: #F1E3C8; 
 }
 
-/* Profile and down arrow icons */
 .profile-icon,
 .down-arrow-icon {
-    display: inline-block; /* Make the icons inline-block */
-    vertical-align: middle; /* Align icons vertically with text */
-    margin-right: 5px; /* Adjust spacing between the icon and arrow */
+    display: inline-block;
+    vertical-align: middle; 
+    margin-right: 5px; 
 }
 
-/* Down arrow icon */
 .down-arrow-icon {
-    stroke-width: 2; /* Make the arrow solid */
+    stroke-width: 2;
 }
