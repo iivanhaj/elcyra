@@ -1,5 +1,5 @@
 .navbar {
-    color: #F1E3C8;
+    color: #393D32;
     padding: 20px 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -27,7 +27,7 @@
 }
 
 .nav-links li a {
-    color: #F1E3C8;
+    color: #FFE0D6;
     text-decoration: none;
 }
 
@@ -64,7 +64,6 @@
     top: 30px;
     list-style-type: none;
     padding: 10px 0;
-    border-radius: 5px;
     display: none;
 }
 

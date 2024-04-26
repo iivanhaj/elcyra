@@ -6,7 +6,7 @@ import '../styles/footer.css';
 
 const Footer = () => {
     return (
-        <div>
+        <div className="glassmorphism-container">
         <div className="footer" style={{backgroundColor:'#AA3D1D'}}>
         <div className="column-footer">
           <div className='h1-text'><b>Student Stories </b></div>

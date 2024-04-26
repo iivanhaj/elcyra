@@ -17,20 +17,29 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const passwordRegex = /.{8,}/;
-
-        if (!emailRegex.test(formData.email)) {
-            alert('Please enter a valid email address.');
-            return;
-        }
-
-        if (!passwordRegex.test(formData.password)) {
-            alert('Please enter a password with at least 8 characters.');
-            return;
-        }
-
-        console.log('Form submitted:', formData);
+        
+        const handleSubmit = (e) => {
+            e.preventDefault();
+            const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*(),.?":{}|<>]).{8,}$/;
+        
+            if (!emailRegex.test(formData.email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+        
+            if (!passwordRegex.test(formData.password)) {
+                alert('Password must contain at least 8 characters including at least one uppercase letter, one lowercase letter, one number, and one special character.');
+                return;
+            }
+        
+            // Additional custom validation if needed
+        
+            // If all validations pass, show success alert
+            alert('Form submitted successfully!');
+            console.log('Form submitted:', formData);
+        };
+        
     };
 
     return (

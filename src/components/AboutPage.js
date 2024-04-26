@@ -42,10 +42,10 @@ const AboutPage = () => {
           <div className='heading-about-3'>Mastering Electronics</div>
           <p style={{marginBottom:'30px'}}>Beginner to Advanced</p>
           <p>Our team of experts holds a wealth of knowledge in the field of electronics. With years of experience and a passion for teaching, we are dedicated to guiding our students through every aspect of electronics, from the basics to advanced concepts.</p>
-          <div className='heading-about-3' style={{marginTop:'30px'}}>Hands-On Learning</div>
-          <hr style={{ marginBottom: '20px', borderTop: '5px solid #F1E3C8' }} />
+          <hr style={{ marginTop: '20px', borderTop: '5px solid #F1E3C8' }} />
+          <div className='heading-about-3' style={{marginTop:'20px'}}>Hands-On Learning</div>
           <p style={{marginBottom:'30px'}}>Practical Application</p>
-          <p>We believe in the importance of hands-on learning. Our courses are designed to incorporate practical exercises and real-world applications, ensuring that our students gain valuable skills that can be applied in various electronic projects and endeavors.</p>
+          <p style={{marginBottom:'100px'}}>We believe in the importance of hands-on learning. Our courses are designed to incorporate practical exercises and real-world applications, ensuring that our students gain valuable skills that can be applied in various electronic projects and endeavors.</p>
         </div>
       </div>
       <Footer/>

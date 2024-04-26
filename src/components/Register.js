@@ -19,7 +19,7 @@ const Register = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        const passwordRegex = /.{8,}/;
+        const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*[!@#$%^&*()_+}{"';:?><]).{8,}$/;
 
         if (formData.name.trim() === '') {
             alert('Please enter your name.');
@@ -31,8 +31,18 @@ const Register = () => {
             return;
         }
 
+        if (formData.password.trim() === '') {
+            alert('Please enter a password.');
+            return;
+        }
+
         if (!passwordRegex.test(formData.password)) {
-            alert('Please enter a password with at least 8 characters.');
+            alert('Please enter a password with the following criteria:\n' +
+                '- At least 8 characters\n' +
+                '- At least one uppercase letter\n' +
+                '- At least one lowercase letter\n' +
+                '- At least one number\n' +
+                '- At least one special character (!@#$%^&*()_+}{":?><)');
             return;
         }
 
@@ -93,9 +103,9 @@ const Register = () => {
                             <button className="ghost" id="signIn">Sign In</button>
                         </div>
                         <div className="overlay-panel overlay-right">
-                        <h1>Welcome Back!</h1>
+                            <h1>Welcome Back!</h1>
                             <p>To keep connected with us please login with your personal info</p>
-                            <button className="ghost" id="signUp"><Link to="/login" style={{color: '#F1E3C8'}}>Sign In</Link></button>
+                            <button className="ghost" id="signUp"><Link to="/login" style={{ color: '#F1E3C8' }}>Sign In</Link></button>
                         </div>
                     </div>
                 </div>
